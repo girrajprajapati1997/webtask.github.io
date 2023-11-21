@@ -1,0 +1,470 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Almarai', sans-serif;
+}
+
+#banner_section{
+    width: 100%;
+    /* height: 100vh; */
+    background: url(03.webp);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+#overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .9;
+}
+#navbar{
+    padding: 3vh 5vw;
+    width: 100%;
+    height: 10vh;
+    background: slategrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#navbar img{
+    width: 7%;
+    border-radius: 50%;
+}
+.navlinks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vw;
+}
+.navlinks h1{
+    color: #fff;
+    font-size: 1.1vw;
+    text-transform: uppercase;
+    font-size: 400;
+    cursor: pointer;
+}
+.navlinks h1:hover{
+    color: #e58f00;
+}
+
+
+/* banner section.......... */
+#banner{
+    position:relative;
+    /* padding-top: 15vh; */
+    width: 100%;
+    padding: 5vw 0vw;
+    /* height: 70vh; */
+    gap: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#banner_img{
+    width: 40%;
+    /* height: 70vh; */
+}
+#banner_img img{
+    width: 90%;
+    border-radius: 50%;
+}
+#banner_text{
+    width: 30%;
+    /* height: 70svh; */
+}
+#banner_text h1{
+    font-size: 4vw;
+    color: #e58f00;
+}
+#banner_text p{
+    font-size: 1vw;
+    color: #fff;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+}
+#banner_text button{
+    font-size: 1.2vw;
+    font-weight: 400;
+    background-color: #e58f00;
+    border: none;
+    padding: 1vw 1vw;
+    border-radius: 10px;
+    /* width: 100px; */
+    cursor: pointer;
+}
+
+/* about section */
+#aboutus{
+    width: 100%;
+    /* height: 70vh; */
+    padding: 5vw;
+    background-color: #1d1d23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+#about_img{
+    padding: 4vw;
+    /* height: 70vh; */
+    width: 45%;
+    border-radius: 10px;
+}
+
+#about_img img{
+    border-radius: 10px;
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+#about_text{
+    /* height: 60vh; */
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#about_text h1{
+    font-size: 5vw;
+    color: #fff;
+}
+#about_text p{
+    font-size: 1.5vw;
+    text-align: start;
+    color: #fff;
+}
+
+/* food section */
+#food_section{
+    /* min-height: 100vh; */
+    width: 100%;
+    padding-top: 3vw;
+    background-color: #e58f00;
+    color: #fff;
+}
+#food_section h1{
+    text-align: center;
+    font-size: 3vw;
+    font-weight: 700;
+    padding-bottom: 3vw;
+}
+#gallery{
+    width: 100%;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+    padding-bottom: 2vw;
+}
+#items{
+    width: 25%;
+    padding-bottom: 2vw;
+}
+#items img{
+    border-radius: 12px;
+    width: 100%;
+}
+#items:hover{
+    transition: all 0.9s;
+    transform: translateY(-10px);
+}
+
+/* about section */
+#about_section{
+    background-color: #1d1d23;
+    width: 100%;
+    /* height: 70vh; */
+    padding: 5vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+#about_section img{
+    /* height: 70vh; */
+    width: 32%;
+    border-radius: 10px;
+}
+#about_text h1{
+    font-size: 3vw;
+    padding-bottom: 20px;
+}
+#about_text p{
+    font-size: 1.5vw;
+    text-align: start;
+    color: #fff;
+}
+
+/* food gallery start here */
+#food_gallery{
+    background-color: #1d1d23;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    padding: 5vw;
+    padding-top: 1vw;
+    position: relative;
+
+}
+#food_gallery h1{
+    padding-bottom: 3vw;
+    font-size: 3vw;
+    color: #fff;
+}
+#food_items{
+    display: flex;
+    width: 85%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3vw;
+}
+#items{
+    width: 30%;
+    /* height: 60vh; */
+    overflow: hidden;
+    border-radius: 10px;
+}
+#items img{
+    width: 100%;
+}
+#items:hover{
+    transition: all 0.5s;
+    transform: translateY(-10px);
+}
+
+
+/* enjoy food section start here */
+#enjoy{
+    width: 100%;
+    /* height: 100vh; */
+    background-color: #1d1d23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#enjoy img{
+    width: 100%;
+    /* height: 100%; */
+    object-fit: cover;
+}
+#mid_section{
+    width: 50%;
+    height: 40%;
+    border: 7px solid #e58f00;
+    position: absolute;
+    padding: 2.5vw;
+    color: #fff;
+    text-align: center;
+}
+#mid_section h1{
+    padding-bottom: 20px;
+    font-size: 3vw;
+}
+#mid_section p{
+    font-size: 1.5vw;
+}
+
+
+/* menu section start here */
+#menu_section{
+    width: 100%;
+    /* min-height: 100vh; */
+    background-color: #1d1d23;
+}
+#menu_section>h1{
+    text-align: center;
+    color: #fff;
+    padding: 3vw 0;
+}
+
+#card_container{
+    width: 100%;
+    /* min-height: 60vh; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+}
+#card{
+    width: 23%;
+    /* height: 60vh; */
+    color: #fff;
+    padding: 3vw 0vw;
+}
+#card img{
+    width: 100%;
+}
+#card>h1{
+    font-size: 1.3vw;
+    color: #e58f00;
+    padding: 10px 0;
+}
+#card>p{
+    font-size: 1vw;
+    /* color: #fff; */
+    padding: 10px 0;
+}
+#card>h3{
+    padding: 10px 0;
+    color: #e58f00;
+    font-size: 1.3vw;
+}
+
+/* best  meal section  */
+#best_section{
+    width: 100%;
+    /* height: 70vh; */
+    padding: 3vw 0vw;
+    background-color: #1d1d23;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#best_section img{
+    position: absolute;
+    border-radius: 50%;
+    left: 10%;
+    /* height: 100%; */
+    width: 25%;
+}
+#yellow{
+    width: 100%;
+    height: 30vh;
+    background-color: #e58f00;
+    display: flex;
+    align-items: center;
+}
+#text{
+    width: 30%;
+    position: absolute;
+    left: 50%;
+}
+#text h1{
+    padding: 20px 0;
+    font-size: 3vw;
+    color: #fff;
+}
+#text p{
+    font-size: 1vw;
+    color: #fff;
+}
+
+/* footer Start here */
+
+#footer{
+    width: 100%;
+    /* height: 40vh; */
+    background-color: #1d1d23;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 5vw 0vw;
+}
+#footer h1{
+    color: #fff;
+}
+#footer img{
+    width: 10%;
+    border-radius: 50%;
+}
+#links{
+    display: flex;
+    gap: 2vw;
+}
+#links h1{
+    font-size: 1.3vw;
+    color: #fff;
+    padding: 20px 0;
+}
+#icons{
+    padding-top: 20px;
+    color: #fff;
+    display: flex;
+    gap: 1.45vw;
+}
+#icons i{
+    font-size: 2vw;
+}
+
+
+
+@media only screen and (max-width: 600px){
+    .navlinks h1{
+        font-size: 2vw;
+    }
+
+    #banner{
+        justify-content: space-evenly;
+    }
+    #banner_text{
+        width: 40%;
+    }
+    #banner_text p{
+        font-size: 1.5vw;
+    }
+    #banner_text button {
+       font-size: 2vw;
+       padding: 2vw 2vw;
+       font-weight: 600;
+    }
+    #about_section{
+        justify-content: space-around;
+    }
+    #food_gallery{
+        padding: 5vw 0vw;
+    }
+    #food_items{
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 3vw;
+    }
+    #items{
+        width: 40%;
+    }
+    #mid_section{
+        padding: 0;
+    }
+    #mid_section h1{
+        padding-bottom: 10px;
+    }
+
+    #card_container{
+        justify-content: space-evenly;
+        gap: 0vw;
+    }
+    #card{
+        width: 30%;
+    }
+    #card p{
+        padding: 0;
+        font-size: 1.2vw;
+    }
+    #card>h1{
+        font-size: 2vw;
+    }
+    #card>h3{
+        font-size: 2vw;
+    }
+    #yellow{
+        height: 20vw;
+    }
+    #links{
+        padding: 0;
+    }
+    #links h1{
+        font-size: 2vw;
+    }
+    #icons i{
+        font-size: 5vw;
+    }
+}
